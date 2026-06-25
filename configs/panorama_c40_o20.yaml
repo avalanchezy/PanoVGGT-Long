@@ -1,0 +1,50 @@
+Weights:
+  model: 'PanoVGGT'
+  PanoVGGT: './weights/model.pt'
+  PanoVGGT_config: './configs/panovggt_model.yaml'
+  DBoW: './weights/ORBvoc.txt'
+  SALAD: './weights/dino_salad.ckpt'
+  DNIO: './weights/dinov2_vitb14_pretrain.pth'
+
+Model:
+  chunk_size: 40
+  overlap: 20
+  loop_chunk_size: 20
+  loop_enable: False
+  useDBoW: False
+  delete_temp_files: True
+  align_method: 'numba'
+  using_sim3: True
+  reference_frame_mid: False
+  input_h: 518
+  input_w: 1036
+
+  IRLS:
+    delta: 0.1
+    max_iters: 5
+    tol: 1e-9
+
+  Pointcloud_Save:
+    sample_ratio: 0.015
+    conf_threshold_coef: 0.75
+    use_conf_filter: True
+    use_confidence_filtering: true
+
+Loop:
+  DBoW:
+    thresh: 0.034
+    num_repeat: 3
+    NMS: 25
+
+  SALAD:
+    image_size: [336, 336]
+    batch_size: 32
+    similarity_threshold: 0.85
+    top_k: 5
+    use_nms: True
+    nms_threshold: 25
+
+  SIM3_Optimizer:
+    lang_version: 'cpp'
+    max_iterations: 30
+    lambda_init: 1e-6

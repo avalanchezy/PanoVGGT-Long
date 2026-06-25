@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+exps/
+exps_*/
+outputs/
+weights/*
+!weights/.gitkeep
+*.log
+*.npy
+*.ply

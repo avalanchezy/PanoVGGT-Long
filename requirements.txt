@@ -1,0 +1,36 @@
+torch
+torchvision
+torchaudio
+numpy
+scipy
+pandas
+opencv-python
+Pillow
+imageio
+tqdm
+matplotlib
+omegaconf
+PyYAML
+hydra-core
+trimesh
+open3d
+plyfile
+numba
+einops
+pypose
+kornia
+safetensors
+huggingface-hub
+yacs
+scikit-learn
+onnxruntime
+pyparsing
+importlib_metadata
+pytorch-lightning
+pytorch-metric-learning
+torchmetrics
+prettytable
+
+# VGGT-Long / Pi-Long retrieval and loop-closure dependencies.
+# On some Windows/WSL CUDA stacks this may need a platform-specific wheel.
+faiss-gpu
