@@ -239,7 +239,7 @@ sudo apt-get install -y libgl1
 ```
 
 ## Citation
-If you need to compare VGGT-Omega-Long as a baseline in your article, you should cite our paper in ([ACCV 2026](https://hal.science/hal-05774047)).
+If you need to compare PanoVGGT-Long as a baseline in your article, you should cite our paper in ([ACCV 2026](https://hal.science/hal-05774047)).
 
 ```bibtex
 @inproceedings{zhu2026mappanod,
