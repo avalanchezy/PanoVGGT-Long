@@ -238,6 +238,19 @@ sudo apt-get update
 sudo apt-get install -y libgl1
 ```
 
+## Citation
+If you need to compare VGGT-Omega-Long as a baseline in your article, you should cite our paper in ([ACCV 2026](https://hal.science/hal-05774047)).
+
+```bibtex
+@inproceedings{zhu2026mappanod,
+title={MapPano3D: Map-Guided Large-Scale Urban Reconstruction from Panoramic Videos},
+author={Yi Zhu and Kiyoharu Aizawa and Sebastien Valette and Satoshi Ikehata},
+booktitle={Eighteenth Asian Conference on Computer Vision},
+year={2026},
+url={https://openreview.net/forum?id=3CrSfvMi5B}
+}
+```
+
 ## Acknowledgements
 
 This repository builds on PanoVGGT and the long-sequence infrastructure of
